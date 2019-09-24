@@ -18,7 +18,7 @@ var app = cli.NewApp()
 func info() {
 	app.Name = "Generate UUID CLI"
 	app.Usage = "Helper to generate a UUID and copy to clipboard"
-	app.Author = "Hieuphq"
+	app.Author = "hieuphq"
 	app.Version = "0.0.1"
 }
 
@@ -31,18 +31,6 @@ func main() {
 			Name:  "amount, a",
 			Usage: "Number of UUID result",
 			Value: 1,
-		},
-	}
-
-	app.Commands = []cli.Command{
-		{
-			Name:    "gen",
-			Aliases: []string{"g"},
-			Usage:   "generate uuid and copy to clipboard",
-			Action: func(c *cli.Context) error {
-				fmt.Println(c.Args())
-				return nil
-			},
 		},
 	}
 
