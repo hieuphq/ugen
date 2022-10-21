@@ -1,9 +1,12 @@
 package clipboard
 
+import "fmt"
+
 type noob struct{}
 
 // NewForNoob new instance for Noob
 func NewForNoob() RWable {
+	fmt.Println("HP")
 	return &noob{}
 }
 
