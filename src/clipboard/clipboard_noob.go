@@ -6,7 +6,7 @@ type noob struct{}
 
 // NewForNoob new instance for Noob
 func NewForNoob() RWable {
-	fmt.Println("HP 1")
+	fmt.Println("HP 12")
 	return &noob{}
 }
 
